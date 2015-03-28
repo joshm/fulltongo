@@ -1,10 +1,11 @@
 {
   "name": "fulltongo",
   "version": "0.0.1",
-  "description": "",
+  "description": "simple keyword text search plugin for mongoose",
+	"keywords": ["mongoose", "keywords", "text", "plugin"],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
