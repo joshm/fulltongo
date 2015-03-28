@@ -39,13 +39,6 @@ describe('plugin', function() {
             should.not.exist(err);
             profiles.push(p);
             if(--stopAt === 0) {
-              /*
-              var opts = {};
-              opts.fields = ['name.first', 'name.last', 'email'];
-
-              schema.plugin(app, opts);
-              */
-
               return done();
             }
           })
