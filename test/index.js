@@ -122,6 +122,14 @@ describe('plugin', function() {
       });
     })
 
+    it('should extend the query with options', function(done) {
+      Person.search('foo hound', {conditions: {"name.first" : "bar"}}, function(err, items) {
+        should.not.exist(err);
+        items.length.should.eql(1);
+        done();
+      })
+    })
+
   })
 
 
